@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web application sample built as part of an assessment. The project is designed to demonstrate key functionalities such as responsiveness, form management, and modern styling.
 
-Currently, two official plugins are available:
+Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    •	React (using Vite for bootstrapping)
+    •	Chakra UI for component styling
+    •	Formik and Yup for form handling and validation
+    •	TypeScript for type safety
 
-## Expanding the ESLint configuration
+Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+    •	Fully responsive design across all screen sizes.
+    •	Chunked code structure for better management and optimization.
+    •	Form management with Formik and validation using Yup.
+    •	Clean and modern UI with Chakra UI.
+    •	Deployed version accessible at: [https://golden-speculoos-89b56c.netlify.app]
 
-- Configure the top-level `parserOptions` property like this:
+Project Setup
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+    1.	Clone the repository:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+git clone <https://github.com/habeebsqn/devHiet-test>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    2.	Navigate into the project directory:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+cd project-directory
+
+    3.	Install the dependencies:
+
+npm install
+
+    4.	Run the development server:
+
+npm run dev
+
+    5.	To build for production:
+
+npm run build
+
+    6.	To preview the production build locally:
+
+npm run preview
+
+Additional Information
+
+    •	Chakra UI provides an intuitive and easily customizable component library for building UI elements.
+    •	Formik and Yup are integrated for managing and validating forms across the app.
+    •	The code structure follows best practices for modularity, ensuring better management and optimization.
