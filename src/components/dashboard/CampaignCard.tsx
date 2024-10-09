@@ -105,8 +105,14 @@ const CampaignCard = ({
             </Text>
           </VStack>
         </CardHeader>
-        <CardBody py={"1vh"}>
-          <Text color={"#595959"} fontSize={"sm"} noOfLines={3} height={"10vh"}>
+        <CardBody
+          display={"flex"}
+          flexDirection={"column"}
+          py={"1vh"}
+          justifyContent={"space-between"}
+          minHeight={{ lg: "21vh" }}
+        >
+          <Text color={"#595959"} fontSize={"sm"} noOfLines={3}>
             {description}
           </Text>
           <VStack display={"flex"} gap={2} alignItems={"flex-start"} mt={"1vh"}>

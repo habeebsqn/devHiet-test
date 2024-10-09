@@ -8,7 +8,7 @@ export const platforms = [
   { name: "facebook", icon: FaFacebookSquare },
   { name: "twitter", icon: AiFillTwitterSquare },
   { name: "instagram", icon: AiFillInstagram },
-  { name: "tikTok", icon: BiLogoTiktok },
-  { name: "youTube", icon: AiFillYoutube },
+  { name: "tiktok", icon: BiLogoTiktok },
+  { name: "youtube", icon: AiFillYoutube },
   { name: "threads", icon: FaSquareThreads },
 ];

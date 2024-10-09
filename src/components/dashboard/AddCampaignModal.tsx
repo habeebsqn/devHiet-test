@@ -52,7 +52,7 @@ const AddCampaignModal = ({
     channels: Yup.array()
       .of(Yup.string())
       .min(1, "At least one platform must be selected")
-      .max(4, "You can select up to 5 platforms")
+      .max(5, "You can select up to 5 platforms")
       .required("Required"),
     minBudget: Yup.string().required("Required").label("minBudget Status"),
     maxBudget: Yup.string().required("Required").label("banker"),
@@ -77,6 +77,8 @@ const AddCampaignModal = ({
       },
       ...values,
     };
+
+    console.log(newCampaign, "new");
 
     dispatch(dataSliceAction.onAddCampaign(newCampaign));
     onClose();
